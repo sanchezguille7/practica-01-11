@@ -11,7 +11,7 @@ apt install nfs-common -y
 
 mount $NFS_SERVER_PRIVATE_IP:/var/www/html /var/www/html
 
-# si creas un archivo en /vaw/www/html aqui tiene que aparecer en NFS_server
+# si creas un archivo en /var/www/html aqui tiene que aparecer en NFS_server
 
 nano /etc/fstab
 

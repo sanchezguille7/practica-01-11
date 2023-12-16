@@ -2,13 +2,14 @@
 
 set -ex
 
-apt update
-
-#apt upgrade -y
-
 source .env
 
+apt update
+
+apt upgrade -y
+
 snap install core
+
 snap refresh core
 
 apt remove certbot

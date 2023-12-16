@@ -4,7 +4,7 @@ set -ex
 
 apt update
 
-#apt upgrade -y
+apt upgrade -y
 
 apt install apache2 -y
 
@@ -18,5 +18,9 @@ a2enmod proxy
 a2enmod proxy_http
 
 a2enmod proxy_balancer
+
+a2dissite 000-default.conf
+
+a2ensite load-balancer.conf 
 
 systemctl restart apache2

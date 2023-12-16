@@ -18,5 +18,3 @@ cp ../exports/exports /etc/exports
 sed -i "s#NFS_FRONTEND_NETWORK#$NFS_FRONTEND_NETWORK#" /etc/exports
 
 systemctl restart nfs-kernel-server
-
-#df -h
